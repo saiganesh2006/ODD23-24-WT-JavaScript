@@ -341,7 +341,7 @@ Close the HTML and Java Script Program.
 </html>
 ```
 ## OUTPUT:
-![Screenshot 2023-12-21 092732](https://github.com/saiganesh2006/ODD23-24-WT-JavaScript/assets/145742342/c3cae7c7-7f48-426f-bac9-aefca4404a6b)
+![Screenshot 2023-12-21 204350](https://github.com/saiganesh2006/ODD23-24-WT-JavaScript/assets/145742342/0a54eca8-c67e-4ff7-8a08-3621740899a9)
 
 ## OBJECTIVE 4:
 ## AIM:Construct a JavaScript program to implement a simple calculator.
