@@ -1,17 +1,22 @@
 # ODD23-24-WT-JavaScript:
 ## AIM: To Create The Following Programs Using Java Script
 ## OBJECTIVE 1:
-## Aim: To Create a form with java script code to calculate electricity bill.
-## Step-1:  Styling (CSS):
+## Aim: 
+To Create a form with java script code to calculate electricity bill.
+## Step-1: 
+Styling (CSS):
 CSS styles defining font, margins, and appearance of HTML elements.Styles for body, headings,labels, inputs, button, and result display area.
 
-## Step-2: HTML Body:
+## Step-2: 
+HTML Body:
 Main content in the <body> section.Heading, form with input fields and a button, and a div for displaying results.
 
-## Step-3: JavaScript:
+## Step-3:
+JavaScript:
 JavaScript code enclosed in script tag.calculateBill() function retrieves input values, performs calculation, and displays results.
 
-## Step-4: User Interaction:
+## Step-4:
+User Interaction:
 Users input units and rate.Clicking "Calculate Bill" triggers JavaScript function, displaying the calculated bill.Styling Adjustments:CSS styles for a clean design.Adjustments include font size, button colors, and spacing.
 
 ## Step-5:
@@ -99,17 +104,22 @@ Close The HTML And Java Script Program.
 ![Screenshot 2023-12-21 083910](https://github.com/saiganesh2006/ODD23-24-WT-JavaScript/assets/145742342/83e1d6d1-f7f2-4e70-99ff-29ee2f150db3)
 
 ## OBJECTIVE 2:
-## AIM: To Develop a JavaScript program to compute the factorial of a given number without recursion.
-## Step-1: CSS Styles:
+## AIM:
+To Develop a JavaScript program to compute the factorial of a given number without recursion.
+## Step-1: 
+CSS Styles:
 Define styles for the body element (font, background color, text color, margin, and alignment).Specify styles for the heading (text color).Set styles for labels, input fields, and buttons (margin, padding, border, etc.).Add a hover effect for buttons.Style the result container (background color, border, padding).
 
-## Step-2: HTML Body Content:
+## Step-2: 
+HTML Body Content:
 Display the title of the calculator using <h2>.Input, Button, and Result Display:Create a label and input field for entering a number.Include a button to trigger the factorial calculation.Display labels for the result and create a container for showing the result.
 
-## Step-3: JavaScript Function:
+## Step-3: 
+JavaScript Function:
 Define a JavaScript function named calculateFactorial().
 
-## Step-4: Factorial Calculation Logic:
+## Step-4: 
+Factorial Calculation Logic:
 Retrieve the input value and convert it to an integer.Check if the input is a non-negative integer.Calculate the factorial using a loop.Display the result or an error message based on the input validity.
 
 ## Step-5:
@@ -211,17 +221,22 @@ Close The HTML And Java Script Program.
 ![Screenshot 2023-12-21 092732](https://github.com/saiganesh2006/ODD23-24-WT-JavaScript/assets/145742342/cec19978-906c-40b8-8804-4506ab5dd60f)
 
 ## OBJECTIVE 3:
-## AIM:Construct a JavaScript code to generate ‘N’ prime numbers.
-## Step-1:User Input:
+## AIM:
+To Construct a JavaScript code to generate ‘N’ prime numbers.
+## Step-1:
+User Input:
 Users input the number of prime numbers they want in the designated input field with the id "count."
 
-## Step-2:Generate Primes Button:
+## Step-2:
+Generate Primes Button:
 Clicking the "Generate Primes" button, which triggers the generatePrimes() function,initiating the prime number generation process.
 
-## Step-3:Prime Number Generation:
+## Step-3:
+Prime Number Generation:
 The script validates the entered count to ensure it is a valid positive integer.Utilizing the isPrime() function, the script generates prime numbers until the specified count is reached.
 
-## Step-4:Result Display:
+## Step-4:
+Result Display:
 The generated prime numbers are displayed in the "result" div, providing a visual representation of the outcome.
 
 ## Step-5:
@@ -344,17 +359,22 @@ Close the HTML and Java Script Program.
 ![Screenshot 2023-12-21 204350](https://github.com/saiganesh2006/ODD23-24-WT-JavaScript/assets/145742342/0a54eca8-c67e-4ff7-8a08-3621740899a9)
 
 ## OBJECTIVE 4:
-## AIM:Construct a JavaScript program to implement a simple calculator.
-## Step-1:JavaScript Function:
+## AIM:
+To Construct a JavaScript program to implement a simple calculator.
+## Step-1:
+JavaScript Function:
 The calculate() function retrieves input values and the selected operator.It performs calculations based on the operator and displays the result in the designated div.
 
-## Step-2:User Interaction:
+## Step-2:
+User Interaction:
 Users input numerical values and select an operator from the dropdown.Clicking the "Calculate" button triggers the calculate() function for real-time interaction.
 
-## Step-3:Result Display:
+## Step-3:
+Result Display:
 The result is dynamically displayed in the "result" div.Special handling prevents division by zero and informs the user of an invalid operator.
 
-## Step-4:Styling Highlights:
+## Step-4:
+Styling Highlights:
 The styling emphasizes a dark background with contrasting text and button colors.Subtle shadow effects and hover states enhance the visual appeal and interactivity of the calculator.
 
 ## Step-5:
@@ -501,16 +521,20 @@ Close the HTML and Java Script program.
 ## AIM:
 To Design a simple text editor JavaScript application where we can manipulate the user input in different styles, edit the input, capitalize, and many string operations.
 
-## Step-1:Body Styles:
+## Step-1:
+Body Styles:
 body styles include font family, background gradient, and flex layout.h2 styles define text color and shadow for the heading.Textarea and Button Styles:textarea styles specify width, height, padding, and border for the input area.button styles define appearance, padding, and cursor for the buttons.
 
-## Step-2:JavaScript:
+## Step-2:
+JavaScript:
 Buttons have onclick attributes triggering specific functions when clicked.Functions like capitalizeText(), makeUppercase(), etc., handle button actions.
 
-## Step-3:Functionality:
+## Step-3:
+Functionality:
 capitalizeText() capitalizes the first letter of each word.makeUppercase() converts input text to uppercase.
 
-## Step-4:User Input:
+## Step-4:
+User Input:
 Users type text into the textarea.The textarea is styled with specific dimensions and appearance.Clicking buttons performs actions like capitalization or reversal.Results are displayed in the output div with specified styles.
 ## Step-5:
 Close the HTML and Java Script Program.
