@@ -497,8 +497,320 @@ Close the HTML and Java Script program.
 ```
 ## OUTPUT:
 ![image](https://github.com/saiganesh2006/ODD23-24-WT-JavaScript/assets/145742342/38149818-8166-40bd-9b68-60d2de8df896)
+## OBJECTIVE 5:
+## AIM:
+To Design a simple text editor JavaScript application where we can manipulate the user input in different styles, edit the input, capitalize, and many string operations.
+
+## Step-1:Body Styles:
+body styles include font family, background gradient, and flex layout.h2 styles define text color and shadow for the heading.Textarea and Button Styles:textarea styles specify width, height, padding, and border for the input area.button styles define appearance, padding, and cursor for the buttons.
+
+## Step-2:JavaScript:
+Buttons have onclick attributes triggering specific functions when clicked.Functions like capitalizeText(), makeUppercase(), etc., handle button actions.
+
+## Step-3:Functionality:
+capitalizeText() capitalizes the first letter of each word.makeUppercase() converts input text to uppercase.
+
+## Step-4:User Input:
+Users type text into the textarea.The textarea is styled with specific dimensions and appearance.Clicking buttons performs actions like capitalization or reversal.Results are displayed in the output div with specified styles.
+## Step-5:
+Close the HTML and Java Script Program.
+## CODE:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Text Editor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, red, black, #bcb8b1);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h2 {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        textarea {
+            width: 80%;
+            height: 150px;
+            padding: 12px;
+            margin-bottom: 16px;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            resize: none;
+            font-size: 16px;
+            color: #333;
+            background-color: #fff;
+        }
+
+        button {
+            background-color:indigo;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 8px;
+            margin-bottom: 8px; /* Added margin for spacing */
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: green; /* Darker shade of blue on hover */
+        }
+
+        #output {
+            background-color: #fff;
+            border: 2px solid #3498db;
+            padding: 12px;
+            text-align: left;
+            border-radius: 8px;
+            width: 80%;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Simple Text Editor</h2>
+
+    <textarea id="inputText" placeholder="Type your text here..."></textarea>
+
+    <div>
+        <button onclick="capitalizeText()">Capitalize</button>
+        <button onclick="makeUppercase()">Uppercase</button>
+        <button onclick="makeLowercase()">Lowercase</button>
+        <button onclick="reverseText()">Reverse</button>
+        <button onclick="clearText()">Clear</button>
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+        function capitalizeText() {
+            var inputText = document.getElementById('inputText').value;
+            var outputDiv = document.getElementById('output');
+
+            var capitalizedText = inputText.replace(/\b\w/g, function (char) {
+                return char.toUpperCase();
+            });
+
+            outputDiv.innerText = capitalizedText;
+        }
+
+        function makeUppercase() {
+            var inputText = document.getElementById('inputText').value;
+            var outputDiv = document.getElementById('output');
+
+            outputDiv.innerText = inputText.toUpperCase();
+        }
+
+        function makeLowercase() {
+            var inputText = document.getElementById('inputText').value;
+            var outputDiv = document.getElementById('output');
+
+            outputDiv.innerText = inputText.toLowerCase();
+        }
+
+        function reverseText() {
+            var inputText = document.getElementById('inputText').value;
+            var outputDiv = document.getElementById('output');
+
+            outputDiv.innerText = inputText.split('').reverse().join('');
+        }
+
+        function clearText() {
+            document.getElementById('inputText').value = '';
+            document.getElementById('output').innerText = '';
+        }
+    </script>
+
+</body>
+</html>
+```
+
+## OUTPUT:
+## (i) To Make Tent To Capitalize:
+![Screenshot 2023-12-22 100629](https://github.com/saiganesh2006/ODD23-24-WT-JavaScript/assets/145742342/f1f3259e-a7c5-48c4-b812-00408daf38bd)
+## (ii) To Make Text To Upper Case:
+![Screenshot 2023-12-22 100640](https://github.com/saiganesh2006/ODD23-24-WT-JavaScript/assets/145742342/06a95cfd-e58e-4580-af29-cbabba5238b1)
+## (iii) To Make Text To lower Case:
+![Screenshot 2023-12-22 100650](https://github.com/saiganesh2006/ODD23-24-WT-JavaScript/assets/145742342/4c2b61e5-a8ca-4506-a047-b20ef717d9a0)
+## (iv) To make Text To Reverse Order:
+![Screenshot 2023-12-22 100659](https://github.com/saiganesh2006/ODD23-24-WT-JavaScript/assets/145742342/6c4a7046-06ba-4f20-b192-005ab212a900)
+## (v) To Make Text Clear:
+![Screenshot 2023-12-22 100711](https://github.com/saiganesh2006/ODD23-24-WT-JavaScript/assets/145742342/2f8f8d4f-cc47-4750-b347-b9a0cc2eb618)
+
+## OJECTIVE 6:
+## AIM:
+To Design a JavaScript program which displays error messages when a field in form is entered incorrectly.
+## Step-1 :
+JavaScript Validation:
+Write JavaScript functions to validate form inputs. Include checks for required fields, email format, or any custom validation.
+
+## Step-2 :
+CSS Styling (Optional):
+Enhance the form's visual appeal by applying CSS styles. Customize colors, fonts, and layouts to create an attractive user interface.
+
+## Step-3 :
+Testing and Debugging:
+Test the form by entering values and submitting. Debug any issues with the validation logic or styling.
+
+## Step-4 :
+Refinement and Deployment:
+Iterate on the code, refining validation, styling, and functionality as needed. Deploy the form on a web server or integrate it into your project.
+
+## Step-5:
+Close the HTML and Java Script Program.
+
+## CODE:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, red,black,blue,yellow);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h2 {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+        }
+
+        form {
+            width: 80%;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input {
+            width: calc(100% - 16px);
+            padding: 12px;
+            margin-bottom: 16px;
+            border: 2px solid #3498db;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #333;
+        }
+
+        button {
+            background-color: indigo;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .error-message {
+            color: blue;
+            margin-top: -8px;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Validation Form</h2>
+
+    <form id="myForm" onsubmit="validateForm(); return false;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <div id="nameError" class="error-message"></div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <div id="emailError" class="error-message"></div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            // Reset error messages
+            document.getElementById('nameError').innerText = '';
+            document.getElementById('emailError').innerText = '';
+
+            // Get form values
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+
+            // Validate name
+            if (name.trim() === '') {
+                document.getElementById('nameError').innerText = 'Name is required.';
+            }
+
+            // Validate email
+            if (email.trim() === '') {
+                document.getElementById('emailError').innerText = 'Email is required.';
+            } else if (!isValidEmail(email)) {
+                document.getElementById('emailError').innerText = 'Invalid email format.';
+            }
+        }
+
+        function isValidEmail(email) {
+            // Basic email validation regex
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+
+</body>
+</html>
+```
+
+## OUTPUT:
+![Screenshot 2023-12-22 104706](https://github.com/saiganesh2006/ODD23-24-WT-JavaScript/assets/145742342/0676ced5-6d08-485a-95e4-7a2654f184b8)
+
+![Screenshot 2023-12-22 104722](https://github.com/saiganesh2006/ODD23-24-WT-JavaScript/assets/145742342/dc1c68c3-0d45-491a-983a-8f149899dfdd)
+
+![Screenshot 2023-12-22 104737](https://github.com/saiganesh2006/ODD23-24-WT-JavaScript/assets/145742342/48899b64-5c5c-4f39-a528-f6ba02613532)
 
 
+## REUSLT:
+Succesfully Executed all the Given JAVA SCRIPT Programs.
 
-
-
+## DEVELOPED BY: D.B.V.SAI GANESH
+## REGISTER NO: 212223240025
