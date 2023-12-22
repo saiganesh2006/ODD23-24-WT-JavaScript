@@ -113,7 +113,7 @@ Define styles for the body element (font, background color, text color, margin, 
 
 ## Step-2: 
 HTML Body Content:
-Display the title of the calculator using <h2>.Input, Button, and Result Display:Create a label and input field for entering a number.Include a button to trigger the factorial calculation.Display labels for the result and create a container for showing the result.
+Display the title of the calculator using.Input, Button, and Result Display:Create a label and input field for entering a number.Include a button to trigger the factorial calculation.Display labels for the result and create a container for showing the result.
 
 ## Step-3: 
 JavaScript Function:
