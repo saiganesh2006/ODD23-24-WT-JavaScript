@@ -1,5 +1,6 @@
 # ODD23-24-WT-JavaScript:
-## AIM: To Create The Following Programs Using Java Script
+## AIM: 
+To Create The Following Programs Using Java Script
 ## OBJECTIVE 1:
 ## Aim: 
 To Create a form with java script code to calculate electricity bill.
